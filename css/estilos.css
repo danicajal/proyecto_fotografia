@@ -1,0 +1,166 @@
+body{
+  font-family: "dancing script";
+  background-color: #02010A;
+  color: white;
+}
+.contenido{
+  margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+header{
+  width: 100%;
+  background-color: #5b7989;
+  text-shadow: 2px #02010A;
+  border-radius: 10px 10px 0 0;
+  animation-name: Encabezado-Animacion;
+  animation-duration: 2s;
+}
+header h1{
+  text-align: center;
+}
+nav a{
+  color: white;
+  padding: 2%;
+  font-size: 1.3em;
+}
+nav {
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+nav a[href="index.html"]{
+  text-decoration: none;
+
+}
+
+img{
+  -webkit-filter: drop-shadow(2px 2px #02010A);
+  filter: drop-shadow(2px 2px #02010A);
+}
+@-webkit-keyframes Encabezado-Animacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: 5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+#ImagenCentral{
+  width: 100%;
+  height: 100%;
+  background-color: #82C3A6;
+
+}
+#ImagenCentral img{
+  height: 80%;
+  width: 80%;
+  padding: 2% 10% 2% 10%;
+  margin: 0 auto;
+}
+#paisaje{
+  width: 100%;
+  background-color: #D5C75F;
+  border: 1px solid #D5C75F;
+}
+#paisaje img{
+  height: 80%;
+  width: 80%;
+  padding: 2% 10% 2% 10%;
+  margin: 0 auto;
+}
+#retrato{
+  width: 100%;
+  background-color: #D5C75F;
+  border: 1px solid #D5C75F;
+}
+#retrato img{
+  height: 80%;
+  width: 80%;
+  padding: 2% 10% 2% 10%;
+  margin: 0 auto;
+}
+footer{
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  background-color: #C6D5C5;
+  color: black;
+}
+
+
+#paisaje:hover{
+  transform: rotate(10deg);
+  -webkit-filter: drop-shadow(2px #82C3A6);
+  filter: drop-shadow(2px #82C3A6);
+
+}
+#retrato:hover{
+  transform: translate(5px,-20px);
+  -webkit-filter: drop-shadow(2px #82C3A6);
+  filter: drop-shadow(2px #82C3A6);
+}
+#redes_sociales a img{
+  width: 10%;
+  height: 10%;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+.contenido{
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+@media (min-width: 900px){
+  .contenido{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10% 0 10%;
+
+  }
+
+  header, #ImagenCentral, footer{
+    width: 90%;
+  }
+  #paisaje {
+    width: 45%;
+  }
+  #retrato {
+    width: 45%;
+  }
+
+
+  header h1{
+    float: left;
+    margin-left: 5%;
+    font-size: 2.5em;
+  }
+  nav {
+  margin-left: 25%;
+  font-size: 1.7em;
+  }
+
+  footer{
+    display: flex;
+  }
+
+  .pie{
+    width: 25%;
+    padding: 2px;
+    margin: 15px;
+  }
+  #redes_sociales a img{
+    width: 25%;
+    height: 25%;
+  }
+
+}
